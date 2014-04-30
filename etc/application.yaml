@@ -1,0 +1,5 @@
+# The main application configuration - we just use a symbolic root to be more flexible, and to
+# facilitate remixing.
+# Remixers or integrators should just pull in
+pgit:
+  tree: '{process.executable.dirname}/../..'

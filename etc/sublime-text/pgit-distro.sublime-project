@@ -1,0 +1,12 @@
+{
+	"folders":
+	[
+		{
+			"follow_symlinks": true,
+			"path": "/Users/byron/Documents/dev/git/pgit-distro",
+			"folder_exclude_patterns" : [
+				"lib"
+			]
+		}
+	]
+}
