@@ -4,20 +4,6 @@ pgit:
   tree: '{process.executable.dirname}/../..'
 
 packages:
-  ###########
-  python: ##
-  #########
-    name: Python
-    version: '2.7'
-    description: |
-      The standard python interpreter
-    url: https://www.python.org
-    trees:
-      - '/opt/local/bin'  # for macports
-      - '/usr/bin'        # standard linux/osx
-      - 'c:\Python{packages.python.version.major}{packages.python.version.minor}' # standard windows
-    executable: 'python{packages.python.version}'
-
   #############
   nosetests: #
   ###########

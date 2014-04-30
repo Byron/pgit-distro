@@ -22,7 +22,7 @@ packages:
   python: ##
   #########
     name: Python
-    version: '2.6'
+    version: '2.7'
     description: |
       The standard python interpreter
     url: https://www.python.org
