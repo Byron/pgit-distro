@@ -1,0 +1,8 @@
+[submodule "bcore"]
+	path = lib/bcore
+	url = https://github.com/Byron/bcore.git
+	branch = master
+[submodule "git-python"]
+	path = lib/git-python
+	url = https://github.com/gitpython-developers/GitPython
+	branch = 0.3
