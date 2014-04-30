@@ -1,0 +1,38 @@
+# As we are on a different level here, we must override the base directory accordingly, and 
+# add a level
+pgit:
+  tree: '{process.executable.dirname}/../..'
+
+packages:
+  ###########
+  python: ##
+  #########
+    name: Python
+    version: '2.7'
+    description: |
+      The standard python interpreter
+    url: https://www.python.org
+    trees:
+      - '/opt/local/bin'  # for macports
+      - '/usr/bin'        # standard linux/osx
+      - 'c:\Python{packages.python.version.major}{packages.python.version.minor}' # standard windows
+    executable: 'python{packages.python.version}'
+
+  #############
+  nosetests: #
+  ###########
+    name: nosetests
+    description: |
+      A runner for python unit tests
+    url: https://nose.readthedocs.org/en/latest/
+    requires:
+      - python
+      - pgit-package
+      # This package just assumes nose is installed on the system, as we don't currently ship with it
+      # - nose
+    alias: python
+    arguments:
+      # Just for testing ...
+      prepend:
+        - -c
+        - import nose; import sys; nose.main(argv = ['nosetests'] + sys.argv[1:])
