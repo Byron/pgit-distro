@@ -2,6 +2,12 @@ packages:
   ###########
   pgit:   ##
   #########
+    # A little bit of repetition seems to be required here to trigger pulling in
+    # the required configuration
+    requires: pgit-package
+  ###################
+  pgit-package:   ##
+  #################
     # Confiure tree, and pull in configuration
     trees: '{pgit.tree}/lib/pgit'
     configuration:
@@ -34,5 +40,8 @@ packages:
     url: https://github.com/gitpython-developers/GitPython
     # Just a marker, this parent repository is supposed to contain the right version
     version: '0.3'
+    environment:
+      variables:
+        PYTHONPATH: '.'
 
 

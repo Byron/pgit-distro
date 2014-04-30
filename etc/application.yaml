@@ -2,4 +2,5 @@
 # facilitate remixing.
 # Remixers or integrators should just pull in
 pgit:
-  tree: '{process.executable.dirname}/../..'
+  tree: '{process.executable.dirname}/..'
+
