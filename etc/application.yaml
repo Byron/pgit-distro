@@ -4,3 +4,8 @@
 pgit:
   tree: '{process.executable.dirname}/..'
 
+logging:
+  level: INFO
+  disable: 0
+
+
