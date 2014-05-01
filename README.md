@@ -1,5 +1,7 @@
 The pgit distribution allows to run pgit without requiring root permissions, both on posix platforms and on windows. It comes with all python dependencies, and need nothing more than a python interpreter to run.
 
+In it's current state, it will help you with managing git-submodules.
+
 ## Requirements
 
 * python 2.6 or above
@@ -29,10 +31,13 @@ Here are a few examples
 ./bin/pgit -h
 
 # list all submodules in the repository at the current working directory
-./bin/pgit submodule
+./bin/pgit submodule query
 
 # call pgit, but use python 2.6 (assuming it is installed in one of the standard locations)
-./bin/pgit submodule ---packages.python.version=2.6
+./bin/pgit submodule query ---packages.python.version=2.6
+
+# Learn about everything pgit submodule can do
+./bin/pgit submodule -h
 ```
 
 ## License
