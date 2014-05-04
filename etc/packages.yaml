@@ -10,8 +10,8 @@ packages:
   #################
     # Confiure tree, and pull in configuration
     trees: '{pgit.tree}/lib/pgit'
-    configuration:
-      trees: etc
+    include: etc
+    
   ##########
   bcore: ##
   ########

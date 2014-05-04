@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/Byron/pgit-distro.svg?branch=master)](https://travis-ci.org/Byron/pgit-distro)
+
 The pgit distribution allows to run pgit without requiring root permissions, both on posix platforms and on windows. It comes with all python dependencies, and need nothing more than a python interpreter to run.
 
 In it's current state, it will help you with managing git-submodules.
