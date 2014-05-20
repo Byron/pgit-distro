@@ -9,13 +9,15 @@ packages:
   pgit-package:   ##
   #################
     # Confiure tree, and pull in configuration
-    trees: '{pgit.tree}/lib/pgit'
+    trees:
+      - '{pgit.tree}/lib/pgit'
     include: etc
     
   ##########
   bcore: ##
   ########
-    trees: '{pgit.tree}/lib/bcore'
+    trees: 
+      - '{pgit.tree}/lib/bcore'
     configuration:
       trees: etc
   ###########
@@ -35,7 +37,8 @@ packages:
   git-python: ##
   #############
     name: git-python
-    trees: '{pgit.tree}/lib/git-python'
+    trees: 
+      - '{pgit.tree}/lib/git-python'
     description: |
       Allows to use git from within python, following pythonic ways.
     url: https://github.com/gitpython-developers/GitPython
