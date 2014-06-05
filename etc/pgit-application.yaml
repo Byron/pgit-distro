@@ -2,7 +2,7 @@
 # facilitate remixing.
 # Remixers or integrators should just pull in
 pgit:
-  tree: '{settings-files.pgit-application.dirname}/..'
+  tree: '{yaml.pgit-application.dirname}/..'
 
 logging:
   level: INFO
